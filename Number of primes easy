@@ -1,0 +1,19 @@
+// You need to return the count of Primes less than equal to N
+// N: input number
+function numberOfPrimes(n)
+{
+    let count = 0;
+    for(let i=2;i<=n; i++){
+        if(Count(i))
+            count++;
+    } 
+    function Count(n){
+        for(let a=2;a*a<=n;a++){
+            if(n%a == 0)
+                return false;
+        }
+        return true;
+    }
+
+    return count;
+}
